@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/divContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/vBanderinIzq"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:elevation="2dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/sombra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/vBanderiDer"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="2dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/sombra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/turnoBlancas"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/divTableroFondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/divTableroFondo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+                <View style="@style/FichaOscura"/>
+                <View style="@style/FichaClara"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/divTableroPosibles"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/divContenedorPosibles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f00"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f01"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f02"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f03"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f04"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f05"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f06"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f07"
+                    style="@style/Ficha"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f10"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f11"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f12"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f13"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f14"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f15"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f16"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f17"
+                    style="@style/Ficha"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f20"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f21"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f22"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f23"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f24"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f25"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f26"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f27"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f30"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f31"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f32"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f33"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f34"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f35"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f36"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f37"
+                    style="@style/Ficha"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f40"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f41"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f42"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f43"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f44"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f45"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f46"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f47"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f50"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f51"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f52"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f53"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f54"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f55"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f56"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f57"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f60"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f61"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f62"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f63"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f64"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f65"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f66"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f67"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f70"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f71"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f72"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f73"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f74"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f75"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f76"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f77"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/divTableroPiezas"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/divContenedorPiezas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fila0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/c00"
+                    android:tag="f00"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c01"
+                    android:tag="f01"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c02"
+                    android:tag="f02"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c03"
+                    android:tag="f03"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c04"
+                    android:tag="f04"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c05"
+                    android:tag="f05"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c06"
+                    android:tag="f06"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c07"
+                    android:tag="f07"
+                    style="@style/Ficha"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f10"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f11"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f12"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f13"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f14"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f15"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f16"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f17"
+                    style="@style/Ficha"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f20"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f21"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f22"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f23"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f24"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f25"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f26"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f27"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f30"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f31"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f32"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f33"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f34"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f35"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f36"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f37"
+                    style="@style/Ficha"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f40"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f41"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f42"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f43"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f44"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f45"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f46"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f47"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f50"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f51"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f52"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f53"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f54"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f55"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f56"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f57"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:tag="f60"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f61"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f62"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f63"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f64"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f65"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f66"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:tag="f67"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fila7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/c70"
+                    android:tag="f70"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c71"
+                    android:tag="f71"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c72"
+                    android:tag="f72"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c73"
+                    android:tag="f73"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c74"
+                    android:tag="f74"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c75"
+                    android:tag="f75"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c76"
+                    android:tag="f76"
+                    style="@style/Ficha"/>
+
+                <View
+                    android:id="@+id/c77"
+                    android:tag="f77"
+                    style="@style/Ficha"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/divBlancasPerdidas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/divTableroFondo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/divNegrasPerdidas" >
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divNegrasPerdidas"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/divBlancasPerdidas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
